@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-size: 12px;
+	color: #424242;
+}
+
+header {
+	background-color: #D2001A;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0px 2px 2px gray;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar {
+	min-height: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 24px;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+}
+
+.nav-branding {
+	color: #FFDE00;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.nav-item {
+	transition: 0.7s ease;
+	font-size: 1.2rem;
+}
+
+.nav-item a {	
+	padding: 1em;		
+}
+
+.nav-item a:hover {
+	color: #FFDE00;
+}
+
+.drawer {
+	display: none;
+	cursor: pointer;
+	font-size: 2.2em;
+	padding: 0.5em;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	min-height: 380px;
+	width: 100%;
+	text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/hero-image_4-large.jpg');
+	background-position: center;
+	background-color: Black !important;
+}
+
+.heroContent {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.title {
+	color: #FFDE00;
+	font-weight: 700;
+	font-size: 70px;
+	text-shadow: 3px 3px 1px white;
+}
+
+.subtitle {
+	color: #fff;
+	margin-top: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	text-shadow: 1px 1px #141414;
+	padding: 0.4em 0em 0.4em 0em;
+}
+
+main {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content {
+	padding: 32px;
+}
+
+.latext {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.latext h1 {
+	font-weight: 700;
+	font-size: 2em;
+	margin-bottom: 50px;
+	padding: 0.2em 0em 0.2em 0em;
+}
+
+.list {
+	margin: 32px auto auto;
+	text-align: left;
+	display: grid;
+	grid-row-gap: 16px;
+}
+
+.list_item {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+
+.city {
+	position: absolute;
+	top: 160px;
+	right: 16px;
+	border-radius: 5px;
+	background-color: #FFDE00;
+	padding: 5px 10px 5px;
+	color: #D2001A;
+	font-weight: 700;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+}
+
+.list_item_content {
+	padding: 16px;
+}
+
+.list_item_thumb {
+	width: 100%;
+	max-height: 200px;
+}
+
+.list_item_rating {
+	font-size: 25px;
+	color: #FFDE00;
+	font-weight: 600;
+	text-shadow: 0px 0px 2px grey;
+}
+
+.list_item_rating_value {
+	font-size: 20px;
+	color: #D2001A;
+	text-decoration: none;
+	padding: 0.5em 1.5em 0.5em 0.5em;
+}
+
+.list_item_title {
+	font-weight: 500;
+	font-size: 16px;
+	margin-top: 10px;
+	transition: 0.3s opacity;
+	color: #424242;
+	padding: 0.2em 0em 0.2em 0em;
+}
+
+.list_item_title:hover {
+	opacity: 0.5;
+}
+
+
+.list_item_desc {
+	margin-top: -40px;
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #424242;
+}
+
+footer {
+	background-color: #D2001A;
+	color: white;
+	font-size: 14px;
+	padding: 2em;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0px -2px 2px gray;
+}
+
+footer p span{
+	font-weight: 700;
+	color: #FFDE00;
+}
+
+.skip-content {
+	position: absolute;
+	top: -75px;
+	left: 10px;
+	background-color: #FFDE00;
+	color: #D2001A;
+	padding: 10px;
+	font-size: 20px;	
+	z-index: 100;				
+	text-decoration: none;
+	border-radius: 10PX;
+}
+
+.skip-content:focus {
+	top: 75px;
+}
+
+.restoran_detail {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 18px 16px;
+}
+
+.restoran_title {
+	padding: 0.3em 0em 0.3em 0em;
+}
+  
+.restoran_detail .restoran_poster {
+	width: 100%;
+	max-width: 400px;
+}
+  
+.restoran_detail .restoran_info h3 {
+	margin: 8px 0;
+}
+
+.review_title{
+	padding: 0.6em 0em 0.6em 0em;
+}
+
+.review_value {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 1.5em;
+  	padding: 1em 1em;
+}
+
+.name_review {
+	font-weight: 700;
+	color: #D2001A;
+}
+
+.review_review {
+	font-weight: 500;
+}
+
+.date_review {
+	color: #D2001A;
+	font-weight: 500;
+	display: flex;
+	justify-content: right;
+}
+
+.like {
+	width: 55px;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #db0000;
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	border-radius: 50%;
+	border: 0;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+}

@@ -1,0 +1,96 @@
+@media screen and (max-width: 425px) {
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('../public/images/hero-image_4-small.jpg');
+    }
+}
+
+@media (max-width: 768px) {
+	.drawer {
+		display: block;
+	}
+
+	.drawer.active .bar:nth-child(2){
+		opacity: 0;
+	}
+
+	.drawer.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.drawer.active .bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		background-color: hsla(353, 100%, 41%, 0.799); 
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	.nav-item {
+		margin: 16px 0;
+	}
+
+	.nav-menu.active {
+		left: 0;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.list_item_content {
+		padding: 16px 32px 32px 32px;
+	}
+	.list_item_title {
+		font-size: 18px;
+	}
+	.list_item_desc {
+		font-size: 14px;
+	}
+
+	.restoran_detail {
+		grid-template-columns: auto 1fr;
+	}
+	
+	.restoran_detail .restoran_title {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	
+	.restoran_detail .restoran_overview {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	.restoran_detail .restoran_review{
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 16px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	main {
+		max-width: 1200px;
+	}
+}
